@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NutriPlan - Meal Planning Made Simple</title>
+    <title>MealMaster - Meal Planning Made Simple</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -12,12 +12,12 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo"><i class="fas fa-utensils"></i>NutriPlan</a>
+                <a href="#" class="logo"><i class="fas fa-utensils"></i>MealMaster</a>
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">How It Works</a></li>
-                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
                 </ul>
                 <div class="nav-buttons">
                     <a href="login.html" class="login-btn">Log In</a>
@@ -31,18 +31,21 @@
     <section class="hero">
         <div class="container">
             <h1>Meal Planning Made Simple</h1>
-            <p>Plan your weekly meals with ease, save time, reduce food waste, and eat healthier with NutriPlan's intuitive meal planning tools.</p>
+            <p>Plan your weekly meals with ease, save time, reduce food waste, and eat healthier with MealMaster's intuitive meal planning tools.</p>
             <div class="hero-buttons">
-                <a href="login.html" class="btn btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+                <a href="pages/login.html" class="btn btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
                 <a href="#how-it-works" class="btn btn-outline">Learn More</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/LandingPageImg2.jpg" alt="MealMaster meal planning dashboard example" />
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">
-            <h2 class="section-title">Why Choose NutriPlan?</h2>
+            <h2 class="section-title">Why Choose MealMaster?</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -94,12 +97,17 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <h2 class="section-title">What Our Users Say</h2>
             <div class="testimonial-card">
-                <p class="testimonial-text">"NutriPlan completely transformed my meal preparation routine. I save time, money, and eat much healthier. The weekly planner is so intuitive!"</p>
-                <p class="testimonial-author">- Sarah Johnson</p>
+                <div class="testimonial-content">
+                    <div class="testimonial-image">
+                        <img src="assets/testimonial2.webp" alt="Sarah Johnson" />
+                    </div>
+                    <p class="testimonial-text">"MealMaster completely transformed my meal preparation routine. I save time, money, and eat much healthier. The weekly planner is so intuitive!"</p>
+                    <p class="testimonial-author">- Sarah Johnson</p>
+                </div>
             </div>
         </div>
     </section>
@@ -108,7 +116,7 @@
     <section class="cta">
         <div class="container">
             <h2>Ready to Simplify Meal Planning?</h2>
-            <p>Join thousands of users who have transformed their eating habits with NutriPlan.</p>
+            <p>Join thousands of users who have transformed their eating habits with MealMaster.</p>
             <a href="login.html" class="btn cta-btn">Sign Up Now - It's Free!</a>
         </div>
     </section>
@@ -118,7 +126,7 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-column">
-                    <h3><i class="fas fa-utensils"></i> NutriPlan</h3>
+                    <h3><i class="fas fa-utensils"></i> MealMaster</h3>
                     <p>Making meal planning simple and effective for everyone.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -156,7 +164,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 NutriPlan. All rights reserved.</p>
+                <p>&copy; 2025 MealMaster. All rights reserved.</p>
             </div>
         </div>
     </footer>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Meal Planner - MealMaster</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/planner.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo"><i class="fas fa-utensils"></i>MealMaster</a>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Meal Planner</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Shopping List</a></li>
+                    <li><a href="#">Nutrition</a></li>
+                </ul>
+                <div class="user-menu">
+                    <a href="#" class="btn btn-outline"><i class="fas fa-bell"></i></a>
+                    <div class="user-avatar">JS</div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="active"><i class="fas fa-calendar-alt"></i> Weekly Planner</a></li>
+                    <li><a href="#"><i class="fas fa-history"></i> Meal History</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> Favorites</a></li>
+                    <li><a href="#"><i class="fas fa-clipboard-list"></i> Shopping List</a></li>
+                </ul>
+                
+                <h3 class="sidebar-title">Meal Categories</h3>
+                <div class="meal-categories">
+                    <div class="meal-category">
+                        <div class="meal-category-color color-breakfast"></div>
+                        <div class="meal-category-name">Breakfast</div>
+                    </div>
+                    <div class="meal-category">
+                        <div class="meal-category-color color-lunch"></div>
+                        <div class="meal-category-name">Lunch</div>
+                    </div>
+                    <div class="meal-category">
+                        <div class="meal-category-color color-dinner"></div>
+                        <div class="meal-category-name">Dinner</div>
+                    </div>
+                    <div class="meal-category">
+                        <div class="meal-category-color color-snack"></div>
+                        <div class="meal-category-name">Snacks</div>
+                    </div>
+                </div>
+                
+                <h3 class="sidebar-title">Dietary Preferences</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="#"><i class="fas fa-leaf"></i> Vegetarian</a></li>
+                    <li><a href="#"><i class="fas fa-seedling"></i> Vegan</a></li>
+                    <li><a href="#"><i class="fas fa-bread-slice"></i> Gluten Free</a></li>
+                    <li><a href="#"><i class="fas fa-fire"></i> Low Carb</a></li>
+                </ul>
+            </div>
+            
+            <!-- Planner -->
+            <div class="planner-container">
+                <div class="planner-header">
+                    <h2 class="planner-title">Weekly Meal Planner</h2>
+                    <div class="planner-actions">
+                        <button class="btn btn-outline"><i class="fas fa-download"></i> Export</button>
+                        <button class="btn btn-primary"><i class="fas fa-shopping-basket"></i> Generate Shopping List</button>
+                    </div>
+                </div>
+                
+                <div class="week-navigator">
+                    <button class="week-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="current-week">March 17 - March 23, 2025</div>
+                    <button class="week-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="meal-planner">
+                    <div class="meal-grid">
+                        <div class="meal-grid-header"></div>
+                        <div class="meal-grid-header">Mon</div>
+                        <div class="meal-grid-header">Tue</div>
+                        <div class="meal-grid-header">Wed</div>
+                        <div class="meal-grid-header">Thu</div>
+                        <div class="meal-grid-header">Fri</div>
+                        <div class="meal-grid-header">Sat</div>
+                        <div class="meal-grid-header">Sun</div>
+                        
+                        <!-- Breakfast Row -->
+                        <div class="meal-grid-time">Breakfast</div>
+                        
+                        <div class="meal-grid-item breakfast">
+                            <div class="meal-item">
+                                <div class="meal-item-title">Greek Yogurt with Berries</div>
+                                <div class="meal-item-info">
+                                    <span>320 cal</span>
+                                    <span>15g protein</span>
+                                </div>
+                            </div>
+                            <div class="meal-item-actions">
+                                <button class="meal-action-btn"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="meal-action-btn"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item breakfast">
+                            <div class="meal-item">
+                                <div class="meal-item-title">Avocado Toast with Egg</div>
+                                <div class="meal-item-info">
+                                    <span>420 cal</span>
+                                    <span>18g protein</span>
+                                </div>
+                            </div>
+                            <div class="meal-item-actions">
+                                <button class="meal-action-btn"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="meal-action-btn"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item breakfast">
+                            <div class="meal-item">
+                                <div class="meal-item-title">Overnight Oats</div>
+                                <div class="meal-item-info">
+                                    <span>380 cal</span>
+                                    <span>12g protein</span>
+                                </div>
+                            </div>
+                            <div class="meal-item-actions">
+                                <button class="meal-action-btn"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="meal-action-btn"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item breakfast">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Breakfast
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item breakfast">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Breakfast
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item breakfast">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Breakfast
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item breakfast">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Breakfast
+                            </div>
+                        </div>
+                        
+                        <!-- Lunch Row -->
+                        <div class="meal-grid-time">Lunch</div>
+                        
+                        <div class="meal-grid-item lunch">
+                            <div class="meal-item">
+                                <div class="meal-item-title">Quinoa Salad with Chickpeas</div>
+                                <div class="meal-item-info">
+                                    <span>480 cal</span>
+                                    <span>20g protein</span>
+                                </div>
+                            </div>
+                            <div class="meal-item-actions">
+                                <button class="meal-action-btn"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="meal-action-btn"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item lunch">
+                            <div class="meal-item">
+                                <div class="meal-item-title">Turkey Sandwich</div>
+                                <div class="meal-item-info">
+                                    <span>450 cal</span>
+                                    <span>25g protein</span>
+                                </div>
+                            </div>
+                            <div class="meal-item-actions">
+                                <button class="meal-action-btn"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="meal-action-btn"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item lunch">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Lunch
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item lunch">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Lunch
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item lunch">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Lunch
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item lunch">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Lunch
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item lunch">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Lunch
+                            </div>
+                        </div>
+                        
+                        <!-- Dinner Row -->
+                        <div class="meal-grid-time">Dinner</div>
+                        
+                        <div class="meal-grid-item dinner">
+                            <div class="meal-item">
+                                <div class="meal-item-title">Baked Salmon with Roasted Vegetables</div>
+                                <div class="meal-item-info">
+                                    <span>520 cal</span>
+                                    <span>40g protein</span>
+                                </div>
+                            </div>
+                            <div class="meal-item-actions">
+                                <button class="meal-action-btn"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="meal-action-btn"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item dinner">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Dinner
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item dinner">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Dinner
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item dinner">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Dinner
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item dinner">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Dinner
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item dinner">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Dinner
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item dinner">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Dinner
+                            </div>
+                        </div>
+                        
+                        <!-- Snack Row -->
+                        <div class="meal-grid-time">Snack</div>
+                        
+                        <div class="meal-grid-item snack">
+                            <div class="meal-item">
+                                <div class="meal-item-title">Apple with Almond Butter</div>
+                                <div class="meal-item-info">
+                                    <span>220 cal</span>
+                                    <span>5g protein</span>
+                                </div>
+                            </div>
+                            <div class="meal-item-actions">
+                                <button class="meal-action-btn"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="meal-action-btn"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item snack">
+                            <div class="meal-item">
+                                <div class="meal-item-title">Protein Smoothie</div>
+                                <div class="meal-item-info">
+                                    <span>280 cal</span>
+                                    <span>20g protein</span>
+                                </div>
+                            </div>
+                            <div class="meal-item-actions">
+                                <button class="meal-action-btn"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="meal-action-btn"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item snack">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Snack
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item snack">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Snack
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item snack">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Snack
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item snack">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Snack
+                            </div>
+                        </div>
+                        
+                        <div class="meal-grid-item snack">
+                            <div class="add-meal">
+                                <i class="fas fa-plus"></i> Add Snack
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add Meal Modal -->
+    <div class="modal" id="addMealModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Add Meal</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="meal-name">Meal Name</label>
+                    <input type="text" id="meal-name" placeholder="Enter meal name">
+                </div>
+                <div class="form-group">
+                    <label for="meal-category">Category</label>
+                    <select id="meal-category">
+                        <option value="breakfast">Breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                        <option value="snack">Snack</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="meal-day">Day</label>
+                    <select id="meal-day">
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="friday">Friday</option>
+                        <option value="saturday">Saturday</option>
+                        <option value="sunday">Sunday</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="meal-calories">Calories</label>
+                    <input type="number" id="meal-calories" placeholder="Enter calories">
+                </div>
+                
+                <div class="form-group">
+                    <label for="meal-protein">Protein (g)</label>
+                    <input type="number" id="meal-protein" placeholder="Enter protein content">
+                </div>
+                
+                <div class="form-group">
+                    <label for="meal-notes">Notes</label>
+                    <textarea id="meal-notes" rows="3" placeholder="Enter any additional notes"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline modal-close">Cancel</button>
+                <button class="btn btn-primary" id="save-meal">Save Meal</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../backend/script/planner.js"></script>
+</body>
+</html>
